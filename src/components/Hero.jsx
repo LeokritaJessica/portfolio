@@ -85,8 +85,8 @@ const Hero = () => {
       <div>
         <svg
           width="650"
-          height="600"
-          viewBox="0 0 808 695"
+          height="550"
+          viewBox="0 0 808 700"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
