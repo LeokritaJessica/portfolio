@@ -5,6 +5,11 @@ module.exports = {
     fontFamily: {
       sans: ["Helvetica", "Arial", "sans-serif"],
     },
+    extend: {
+      height: {
+        xl: "500px",
+      },
+    },
   },
   variants: {
     extend: {},

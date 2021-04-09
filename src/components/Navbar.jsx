@@ -1,16 +1,20 @@
 import React from 'react'
-// import {Link} from "react-router-dom"
+import {Link} from "react-scroll"
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm front-mono tracking-widest">
-        <a
-          href="http://"
-          className="pl-8 font-bold md:font-bold tracking-tighter"
+    <div className="sticky top-0">
+      <nav className="nav">
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-20}
+          duration={500}
+          className="logo"
         >
           Jessica
-        </a>
+        </Link>
 
         <div className="px-4 cursor-pointer md:hidden">
           <svg
@@ -29,24 +33,29 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="pr-8 md:block space-x-2">
-          <a
-            href="\\"
-            className="p-4 hover:bg-purple-500 hover:text-white transition ease-linear duration-500 rounded"
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="nav-link"
           >
             About
-          </a>
-          <a
-            href="\\"
-            className="p-4 hover:bg-purple-500 hover:text-white transition ease-linear duration-500 rounded"
+          </Link>
+          <Link
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={500}
+            className="nav-link"
           >
             Project
-          </a>
-          <a
-            href="\\"
-            className="p-4 hover:bg-purple-500 hover:text-white transition ease-linear duration-500 rounded"
-          >
+          </Link>
+          <Link to="contact" className="nav-link">
             Contact
-          </a>
+          </Link>
         </div>
       </nav>
     </div>

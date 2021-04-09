@@ -958,7 +958,7 @@ const About = () => {
           </defs>
         </svg>
       </div>
-      <div className="my-20 ml-20 text-left space-y-3 mr-20">
+      <div className="my-20 ml-20 text-left space-y-3 mr-20" id="#about">
         <p className="text-purple-500 font-bold text-6xl pb-4">
           About me
           <svg
@@ -971,13 +971,13 @@ const About = () => {
             <path d="M0 4.5H46" stroke="#400FCB" stroke-width="8" />
           </svg>
         </p>
-        <p className="text-black-300 font-light text-lg leading-normal tracking-wider">
+        <p className="text">
           I graduated from Immanuel Vocational High School in Pontianak with a
           major in computer. I currently graduated from Intensive Bootcamp by
           Glints Academy. In the bootcamp, I learned a lot about getting used to
           using javascript, creating Rest Api with Nodejs express and etc.
         </p>
-        <p className="text-black-300 font-light text-lg leading-normal tracking-wider">
+        <p className="text">
           I also completed several projects from the bootcamp in the form of a
           mini project called Laflix, a movie review and a final project called
           Sweethome. You can see the results of my projects later on the
